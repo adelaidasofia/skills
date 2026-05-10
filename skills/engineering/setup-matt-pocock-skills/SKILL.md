@@ -103,8 +103,10 @@ The block:
 
 ### Domain docs
 
-[one-line summary of layout — "single-context" or "multi-context"]. See `docs/agents/domain.md`.
+This repo uses **`CONTEXT.md`** as its domain glossary (or **`CONTEXT-MAP.md`** at the root if multi-context). Read it at session start before naming files, drafting prose, or proposing structure — vocabulary in `CONTEXT.md` is canonical. ADRs in `docs/adr/` (or `src/<context>/docs/adr/` for multi-context) record past architectural decisions; respect them. See `docs/agents/domain.md`.
 ```
+
+The Domain docs block is intentionally self-contained: agents reading `CLAUDE.md` / `AGENTS.md` get CONTEXT.md awareness even when the engineering skills aren't installed locally. This means a teammate's `/grill-with-docs` output still benefits the rest of the team's vanilla sessions.
 
 Then write the three docs files using the seed templates in this skill folder as a starting point:
 
